@@ -1,4 +1,2 @@
 #!/bin/sh
-
-cat ../data/iris.data.txt | sed -e 's/Iris-setosa/1/' | sed -e 's/Iris-versicolor/2/' | sed -e 's/Iris-virginica/3/'
-
+cat ../data/iris.data.txt | sed -e 's/Iris-setosa/0/' | sed -e 's/Iris-versicolor/1/' | sed -e 's/Iris-virginica/2/'
