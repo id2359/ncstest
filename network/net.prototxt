@@ -1,5 +1,5 @@
 # Original files copied and munged from http://www.cromulentrambling.com/2015/08/caffe-tutorial-part-1-basic-feedforward.html
-name: "iris"
+name: "irisnet"
 layer {
   name: "data"
   type: "HDF5Data"
@@ -9,7 +9,7 @@ layer {
     phase: TRAIN
   }
   hdf5_data_param {
-    source: "../data/train_file_location.txt"
+    source: "../data/train.hdf5"
     batch_size: 10
   }
 }
@@ -22,7 +22,7 @@ layer {
     phase: TEST
   }
   hdf5_data_param {
-    source: "../data/test_file_location.txt"
+    source: "../data/test.hdf5"
     batch_size: 10
   }
 }

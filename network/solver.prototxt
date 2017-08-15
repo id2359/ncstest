@@ -21,4 +21,4 @@ max_iter: 1000
 snapshot: 1000
 snapshot_prefix: "./"
 # solver mode: CPU or GPU
-solver_mode: GPU
+solver_mode: CPU
